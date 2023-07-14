@@ -48,4 +48,6 @@ const Mint: NextPage = () => {
   );
 };
 
+
+
 export default Mint;
