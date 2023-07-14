@@ -42,10 +42,8 @@ const Mint: NextPage = () => {
   };
 
   return (
-    <div className="flex flex-col items-start">
-      {account && <button onClick={onClickMint}>민팅하기</button>}
-      <button onClick={onClickBalanceOf}>BalanceOf</button>
-      {tokenId && <NftCard tokenId={tokenId} />}
+    <div className="flex items-start">
+      {account && <button className="text-yellow-500 font-bold just justify-center items-center" onClick={onClickMint}>민팅하기</button>}
     </div>
   );
 };

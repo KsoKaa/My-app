@@ -34,7 +34,7 @@ const Header: FC = () => {
   };
 
   return (
-    <div className="bg-green-100 py-4 pr-8 flex justify-end">
+    <div className="bg-orange-100 py-4 pr-8 flex justify-end">
       {account ? (
         <div>
           {account.substring(0, 4)}...{account.substring(account.length - 4)}

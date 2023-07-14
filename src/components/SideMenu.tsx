@@ -7,21 +7,23 @@ interface SideMenuProps {
 
 const SideMenu: FC<SideMenuProps> = ({ children }) => {
   return (
-    <div className="bg-red-100 min-h-screen flex">
-      <nav className="bg-yellow-100 w-60 shrink-0 flex flex-col py-8 pl-4">
-        <div>프로젝트 다덴부</div>
+    <div className="bg-orange-200 min-h-screen flex">
+      <nav className="bg-orange-100 w-60 shrink-0 flex flex-col py-8 ">
+        <div className="flex justify-start items-center justify-center">
+        <div className="font-bold text-lg text-orange-300 border-b-4">Random Drink</div>
+        </div>
         <div className="bg-orange-100 grow pt-12 flex flex-col">
           <Link href="/">
-            <button>Dadenbu ???</button>
+            <button className="p-6 text-orange-400">Details</button>
           </Link>
           <Link href="/mint">
-            <button>Mint</button>
+            <button className="p-6 text-orange-400">Mint</button>
           </Link>
           <Link href="/my-nft">
-            <button>My NFT</button>
+            <button className="p-6 text-orange-400">My NFT</button>
           </Link>
         </div>
-        <div>Created by h662.</div>
+        <div>Created by Wook.</div>
       </nav>
       <div className="flex flex-col w-full">{children}</div>
     </div>
